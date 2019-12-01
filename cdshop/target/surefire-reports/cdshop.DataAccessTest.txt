@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: cdshop.DataAccessTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec <<< FAILURE!
+cdshop.DataAccessTest.testGet()  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at cdshop.DataAccessTest.testGet(DataAccessTest.java:42)
+
+cdshop.DataAccessTest.testUpdate()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at cdshop.DataAccessTest.testUpdate(DataAccessTest.java:54)
+
+cdshop.DataAccessTest.testSave()  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at cdshop.DataAccessTest.testSave(DataAccessTest.java:36)
+
+cdshop.DataAccessTest.testDelete()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at cdshop.DataAccessTest.testDelete(DataAccessTest.java:60)
+
+cdshop.DataAccessTest.testList()  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at cdshop.DataAccessTest.testList(DataAccessTest.java:29)
+

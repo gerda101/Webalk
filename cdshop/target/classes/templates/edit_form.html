@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Edit CD</title>
+</head>
+<body bgcolor="#FCF5B0">
+<div align="center">
+    <h1>Edit Information of Existing CD</h1>
+    <a href="/">Back to Title</a>
+    <br/><br/>
+		<form action="#" th:action="@{/update}" th:object="${cd}" method="post">
+
+			<table bgcolor="#9dd8c8" cellpadding="10">
+				<tr>
+					<td>ID:</td>
+					<td><input type="text" th:field="*{id}" readonly="readonly" /></td>
+				</tr>
+				<tr>
+					<td>Album title:</td>
+					<td><input type="text" th:field="*{title}" /></td>
+				</tr>
+				<tr>
+					<td>Album artist:</td>
+					<td><input type="text" th:field="*{artist}" /></td>
+				</tr>
+				<tr>
+					<td>Available stock:</td>
+					<td><input type="text" th:field="*{stock}" /></td>
+				</tr>
+				<tr>
+					<td>Price (USD):</td>
+					<td><input type="text" th:field="*{price}" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit">Save</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>  
+</body>
+</html>
